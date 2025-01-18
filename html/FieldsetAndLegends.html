@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset and Legends</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        dt{
+            background-color: grey;
+            color: white;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        fieldset{
+            margin-bottom: 20px;
+        }
+        legend{
+            background-color:yellow;
+            color: red;
+            text-align: center;
+            padding: 5px;
+            box-shadow: 3px 8px 7px black;
+        }
+        .data-def{
+            background-color:yellow;
+            color: red;
+            text-align: center;
+            padding: 5px;
+            text-shadow: 3px 3px 3px grey;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Greet</legend>
+        <dl>
+            <dt>hi</dt>
+            <dd>dd</dd>
+            <dt>hi</dt>
+            <dd>dd</dd>
+            <dt>hi</dt>
+            <dd>dd</dd>
+        </dl>
+    </fieldset>
+
+    <fieldset>
+        <legend>Meet</legend>
+        <dl>
+            <dt>mvmv</dt>
+            <dd>mvmv</dd>
+            <dt>mvmv</dt>
+            <dd>mvmv</dd>
+            <dt>mvmv</dt>
+            <dd>mvmv</dd>
+        </dl>
+    </fieldset>
+    
+    <fieldset>
+        <dl>
+        <dd class="data-def">WELCOME</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

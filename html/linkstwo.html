@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 3px 9px;
+        }
+        iframe{
+            width: 100%;
+            height: 500px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="container">
+    <ol>
+        <li><a href="terms.html">Shopping Page</a></li>
+        <li> <a href="http://www.amazon.in">Online Shopping</a></li>
+        <li><a href="images/quick-search-4.png">Food Pictures</a></li>
+        <!-- when we want to always download file even if plugin is available -->
+        <li><a href="30-CSS Text and List.txt" download="css info">Css info</a></li>
+        
+        <!-- Open application -->
+            <!--Email-->
+         <li>Contact our<a href="mailto:manishshirsat@gmail.com">manishshirsat@gmain.com</a></li> 
+            <!--to make call -->
+            <li>Call us at <a href="tel:919292919192">9292929292</a></li>
+            <!-- skype -->
+             <li>skype us @ <a href="skype:manish@outlook.com">manish</a></li>
+
+        <!-- open in new tap -->
+        <li><a href="images/quick-search-4.png" target="_blank">Food Pictures</a></li>
+
+        <!-- Open in new window imp for professional  new tab all know but not new window -->
+        <li><a href="javascript:window.open('images/quick-search-4.png','Food','width:600px height:600px')" >Food Pictures</a></li>
+        <!-- original link is https://www.youtube.com/watch?v=oV74Najm6Nc this but to embed it in our
+         html code  and web page we need to remove (watch?v) this part and replace it with 
+         embed/ -->
+        <li><a href="https://www.youtube.com/embed/oV74Najm6Nc" target="bodyframe">artificial inteligence</a></li>
+    </ol>
+    </nav>
+    <main>
+        <iframe name="bodyframe"></iframe>
+    </main>
+</body>
+</html>

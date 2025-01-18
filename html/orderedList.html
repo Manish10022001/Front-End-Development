@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List</title>
+    <style>
+        #childList{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .list-item-one{
+            margin-right: 40px;
+            margin-top: 10px;
+        }
+        #childList-one{
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+        }
+        .list-item-two{
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+        .list-item-three{
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Design list items side by side -->
+     <ol type="1">
+        <li class="list-item-one">The the elements that will not return presentation directly are known as ...
+            <ol type="a" id="childList">
+                <li class="list-item-one">Normal Elements</li>
+                <li class="list-item-one">Void Elements</li>
+                <li class="list-item-one">RC Data</li>
+                <li class="list-item-one">Raw text</li>
+            </ol>
+        </li>
+
+        <li class="list-item-one">The raw text elements are ....
+            <ol type="a" id="childList">
+                <li class="list-item-one">Bold</li>
+                <li class="list-item-one">Image</li>
+                <li class="list-item-one">&copy</li>
+                <li class="list-item-one">Raw text</li>
+            </ol>
+        </li>
+     </ol>
+
+    <ol type="1">
+        <li class="list-item-two">The the elements that will not return presentation directly are known as ...
+            <ol type="a" id="childList-one">
+                <li class="list-item-two">Normal elements</li>
+                <li class="list-item-two">Void elements</li>
+                <li class="list-item-two">RC data</li>
+                <li class="list-item-two">Raw text</li>
+            </ol>
+        </li>
+        <li class="list-item-two">The the elements that will not return presentation directly are known as ...
+            <ol type="a" id="childList-one">
+                <li class="list-item-two">Normal elements</li>
+                <li class="list-item-two">Void elements</li>
+                <li class="list-item-two">RC data</li>
+                <li class="list-item-two">Raw text</li>
+            </ol>
+        </li>
+
+        <!-- SCROLABLE LIST -->
+        <ol class="list-item-three">
+            <li>html</li>
+            <li>width</li>
+            <li>ks</li>
+            <li>vd</li>
+            <li>html</li>
+            <li>width</li>
+            <li>ks</li>
+            <li>vd</li>
+            <li>html</li>
+            <li>width</li>
+            <li>ks</li>
+            <li>vd</li>
+        </ol>
+    </ol>
+    
+</body>
+</html>

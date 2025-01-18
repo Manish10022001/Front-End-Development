@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        meter{
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+       <dl>
+        <dt>Password Strength</dt>
+        <dd>
+            <meter value=""></meter>
+        </dd>
+        <dt>Strong Password</dt>
+        <dd>
+            <meter min="1"  max="100"  value="100"></meter>
+        </dd>
+        <dt>Weak Password</dt>
+        <dd>
+            <meter min="1" max="80" low="40" high="80" value="100"></meter>
+        </dd>
+        <dt>Poor Password</dt>
+        <dd>
+            <meter min="1" max="60" low="60" high="80" value="100"></meter>
+        </dd>
+       </dl> 
+    </form>
+
+    <!-- TExt area -->
+     <form action="">
+        <fieldset>
+            <legend>Your Comments</legend>
+            <textarea rows="5" cols="40" name="" id=""></textarea>
+            <p><button>Post Comments</button></p>
+        </fieldset>
+     </form>
+</body>
+</html>

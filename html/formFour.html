@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 100px;
+            overflow: auto;
+            border: 2px solid green;
+        }
+        /* .term span in this space after term indicates that
+        style apply to all spans after class term. 
+        
+        so to avoid it we use + which means adjacent i,e right after*/
+        .term+span{
+            color: red;
+        }
+        /* term:checked means when term is checked 
+        term:checked+span means when span right beside or adjacent
+        to term is checked below style should be applied */
+        .term:checked+span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <div class="container" >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum explicabo consequatur debitis, provident exercitationem vel, soluta tenetur officiis nobis possimus iste dolorum fugit at velit! Illo deleniti tenetur, fugiat eaque, commodi ducimus possimus corporis reprehenderit enim sunt odit perspiciatis sapiente reiciendis repudiandae blanditiis harum molestiae repellat, ab sed autem ipsum soluta et. Ab omnis harum distinctio aspernatur ipsam, nemo possimus quasi, maiores illum velit optio, eum cupiditate tenetur qui. Quibusdam quas rem tempora repellendus ipsum voluptatem adipisci!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex neque praesentium nemo, cum minima incidunt tenetur autem rerum nam. Quas veritatis eveniet eum nobis quae natus placeat nostrum facere illo.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eum labore commodi placeat vero neque veritatis qui, animi rem provident sunt ad rerum voluptas asperiores tempora maxime officiis non cupiditate facilis quod. Modi, enim facere impedit nobis minima at ad tempore laborum magni, dolore asperiores.
+        </div>
+        <p>
+            <input class="term" type="checkbox"><span>I accept</span>
+        </p>
+    </form>
+</body> 
+</html>
