@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap : Nav with Tabs</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>Tab base Nav</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-class"><a href="#basic" data-bs-toggle="tab" class="nav-link">Basic Details</a></li>
+        <li class="nav-class"><a href="#preview" data-bs-toggle="tab" class="nav-link">Preview</a></li>
+        <li class="nav-class"><a href="#description" data-bs-toggle="tab" class="nav-link">Description</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="basic">
+            <h3>Basic Details</h3>
+            <dl>
+                <dt>Name</dt>
+                <dd>Winter Jacket</dd>
+                <dt>Price</dt>
+                <dd>55555.00</dd>
+            </dl>
+        </div>
+        <div class="tab-pane" id="preview">
+            <h3>Preview</h3>
+            <img src="../images/winter jacket.jpg" width="200" height="200">
+        </div>
+        <div class="tab-pane" id="description">
+            <h3>Description</h3>
+            <p>Something about winter jacket...</p>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components(BC) - Forms</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center">
+    <form action="" class="w-25 border border-3 rounded rouonded-3 border-primary p-4">
+        <h2>Register User</h2>
+        <div class="mb-3">
+            <label class="form-label" for="UserName">User Name</label>
+            <div >
+                <input class="form-control" type="text" name="UserName">
+                <div>
+                    <span>Username requried</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <div>
+                <input type="password" name="password" class="form-control">
+                <div>
+                    <span>Password required</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Select City</label>
+            <div>
+                <select class="form-select">
+                    <option>Choose City</option>
+                    <option>Akola</option>
+                    <option>Amravati</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Date of Birth</label>
+            <div>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Select Price Range</label>
+            <div>
+                <input type="range" class="form-range">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">Terms of Service</label>
+            <div>
+                <textarea rows="4" disabled class="form-control">Terms and Conditions you have to accept.</textarea>
+            </div>
+            <div class="form-switch">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">I Accept</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary w-100">Register</button>
+        </div>
+    </form>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

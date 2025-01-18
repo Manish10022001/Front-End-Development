@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components(BC) - Alerts </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>Modal</h2>
+    <button data-bs-target="#register" data-bs-toggle="modal" class="btn btn-primary">Register</button>
+    <button data-bs-target="#details" data-bs-toggle="modal" class="btn btn-danger">Product Details</button>
+    <button data-bs-target="#registerUser" data-bs-toggle="modal" class="btn btn-primary">Register User</button>
+    <a href="#details" data-bs-toggle="modal">Details</a>
+    <!--fade is used for diaglog box to appear slowly-->
+    <div class="modal fade" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <h3>Register User</h3>
+                    <button data-bs-dismiss="modal" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl> 
+                        <dt>User Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Register</button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="details">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Poduct Details</h3>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/winter jacket.jpg" width="200" height="200 ">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Winter Jacket</dd>
+                        <dt>Price</dt>
+                        <dd>45555</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="registerUser">
+        
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Register User</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label" for="UserName">User Name</label>
+                        <div >
+                            <input class="form-control" type="text" name="UserName">
+                            <div>
+                                <span>Username requried</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <div>
+                            <input type="password" name="password" class="form-control">
+                            <div>
+                                <span>Password required</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label class="form-label">Select City</label>
+                        <div>
+                            <select class="form-select">
+                                <option>Choose City</option>
+                                <option>Akola</option>
+                                <option>Amravati</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="" class="form-label">Date of Birth</label>
+                        <div>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="" class="form-label">Select Price Range</label>
+                        <div>
+                            <input type="range" class="form-range w-50">
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="" class="form-label">Terms of Service</label>
+                        <div>
+                            <textarea rows="4" disabled class="form-control">Terms and Conditions you have to accept.</textarea>
+                        </div>
+                        <div class="form-switch">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label">I Accept</label>
+                        </div>   
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

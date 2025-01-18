@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components(BC) - Alerts </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>Alerts</h2>
+    <div class="alert alert-danger alert-dismissible" >
+        <h2 class="alert-title">Delete Record</h2>
+        <button data-bs-dismiss="alert" class="btn-close"></button>
+        <p class="alert-subtitle">Record will be deleted permanently</p>
+        <a class="alert-link" href="#">Help?</a>
+        <button class="bg-danger text-white" data-bs-dismiss="alert">OK</button>
+    </div>
+
+    <div class="alert alert-success alert-dismissible" >
+        <h2 class="alert-title">Record Inserted</h2>
+        <button data-bs-dismiss="alert" class="btn-close"></button>
+        <p class="alert-subtitle">Record inserted successfully</p>
+        <a class="alert-link" href="#">Help?</a>
+        <button class="bg-success text-white" data-bs-dismiss="alert">OK</button>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
