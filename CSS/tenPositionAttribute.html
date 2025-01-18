@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Attributes</title>
+    <style>
+        .div-static{
+            border: 2px solid red;
+        }
+        .static{
+            border: 2px dashed yellow;
+            width: 100px;
+            position :static;
+        }
+        .absolute{
+            border: 2px dashed blue;
+            width: 100px;
+            position: absolute;
+            right: 10px;
+            top: 30px;
+        }
+        .fixed{
+            border: 2px dashed green;
+            width: 140px;
+            position: fixed;
+            right: 10px;
+            top: 60px;
+            color: red;
+        }
+        dt{
+            background-color: black;
+            color: white;
+            width: 160px;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        .parent-box{
+            border: 2px solid red;
+            width: 300px;
+            height: 200px;
+            margin-left: 60px;
+        }
+        .child-box{
+            border: 2px dashed blue;
+            width: 100px;
+            height: 60px;
+            position:relative;
+            left: 10px;
+            top: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div-static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aperiam magni eaque similique quod commodi unde quam cupiditate praesentium dolorum!
+        <aside class="static">
+            Special Order
+        </aside>
+    </div>
+    <div class="div-static">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus id, minus quas quo dignissimos sit excepturi voluptatibus vel in porro obcaecati earum error temporibus dolore consequuntur, sapiente nam similique dicta.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem soluta odit doloremque quam ratione obcaecati fuga. Recusandae laboriosam id ab, veritatis laudantium expedita, molestiae numquam maxime culpa ducimus labore quos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ab accusamus quis, dicta reprehenderit quae rem voluptate pariatur excepturi nihil optio eaque quia, nesciunt temporibus veniam eveniet tenetur ad necessitatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quis provident quo eos laudantium, ex natus esse dolore. Sequi odit fuga officia officiis similique cum amet consequuntur minima soluta fugiat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro harum laborum fuga ab totam doloremque soluta quo deleniti beatae ipsa iure eius, iusto, eveniet velit debitis necessitatibus aliquid deserunt odio?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam aliquam dolor nesciunt animi eaque ipsa. Iusto fuga facere, vel officiis non harum laudantium, quaerat asperiores dolorem repellat aliquid praesentium.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos beatae, laborum totam quis maxime assumenda impedit asperiores fuga cumque? Sapiente exercitationem dolor dicta optio culpa qui, beatae sint recusandae?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error dolor facere rem sequi quia delectus ad quidem, molestias, impedit ut quibusdam? Voluptate assumenda saepe ducimus mollitia blanditiis ipsum doloremque autem.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nisi, vitae aspernatur amet sit neque necessitatibus voluptas, in, minima quidem tempora distinctio obcaecati quis? Quas, voluptates quibusdam. Amet, odio optio.
+        <aside class="absolute">
+            Special Order
+        </aside>
+
+        <aside class="fixed">
+            Fixed - Special Offer
+        </aside>
+    </div>
+    <div>
+        <dl>
+            <dt>Mobiles</dt>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dt>Footwear</dt>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd>
+            <dd>Lorem.</dd><dd>Lorem.</dd>
+        </dl>
+    </div>
+
+        <!-- RElative position -->
+    <div class="parent-box">
+        parent-box
+        <div class="child-box">
+            child-box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        li{
+            width: 130px;
+            font-size: 19px;
+            border: 2px solid black;
+            padding: 5px;
+            color: white;
+            background-color: tomato;
+        }
+        ol{
+            list-style: none;
+        }
+        @media screen and (max-width:500px) and (orientation:portrait){
+            li{
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        @media screen and (min-width:500px) and (orientation:landscape){
+            li{
+                display: inline;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ol>
+</body>
+</html>

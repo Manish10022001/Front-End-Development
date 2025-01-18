@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Attributes</title>
+    <style>
+        .body-cover {
+            height: 600px;
+            width: 100%;
+            background-image: linear-gradient(to right, red, yellow,green, violet,indigo,white,orange,black);
+        }
+
+        .image{
+            height: 600px;
+            width: 100%;
+            background-image:radial-gradient(black,rgba(255,255,255,0.8));
+        }
+        .image{
+            background-image: url(../images/bg-image.png);
+        }
+     </style>
+ </head>
+ <body>
+    <div class="body-cover">
+
+    </div>
+    <div class="image">
+
+    </div>
+ </body>
+
+    <!-- Can we define multiple background colors? -->
+     <!--  
+Ans : Yes. By using Gradient Colors
+          Background multiple colors are applied by using
+        "background-image"
+
+          Gradiants are 2 types
+        a) linear gradient        horizontal and vertical
+        b) radial gradient        from center
+
+     Syntax:
+        body {
+          background-image: linear-gradient(to right, red, yellow);
+        }
+ -->

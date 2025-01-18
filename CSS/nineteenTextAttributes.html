@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Attributes</title>
+    <style>
+        .font{
+            font-size:30px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-variant: small-caps; /*all capital*/
+        }
+        .text-decoration-one{
+            text-decoration-style:wavy;
+            text-decoration-line: underline;
+            text-decoration-color:violet;
+            text-decoration-thickness: 8px;
+        }
+        /*OR*/
+        .text-decoration-two{
+            text-decoration: underline dashed yellow 10px;
+        }
+        .color-and-text-shadow{
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow:3px 3px 3px red;
+            color:yellow;
+        }
+        .color-and-text-shadow{
+            text-transform:capitalize;
+        }
+        .spacing{
+            word-spacing: 20px; 
+            letter-spacing: 10px; /*letter spacing*/
+            line-height: 25px; /*line spacing*/
+        }
+        .whitespace-textoverflow-overflow{
+            border: 2px solid red;
+            width: 200px;
+            height: 45px;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .drop-cap::first-letter{
+            font-size:50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight:bold;
+            float:left;
+            color:red;
+            margin-right:5px;
+            margin-bottom:-5px;
+            padding:4px;
+        }
+    </style>
+</head>
+<body>
+    <p class="font">Css Text Attributes</p>
+    <!-- for text decoration two type are availablel -->
+    <p class="text-decoration-one">
+        Css Text Attributes
+    </p>
+    <p class="text-decoration-two">
+        Css Text Attributes
+    </p>
+    <p class="color-and-text-shadow">
+        Css Text Attributes
+    </p>
+    <p class="spacing">
+        Css Text Attributes Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum hic perspiciatis autem magni, minus vel velit illum distinctio est aspernatur repudiandae quisquam.
+    </p>
+    <p class="whitespace-textoverflow-overflow">
+        Css Text Attributes Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, qui in aspernatur beatae illo voluptatibus! Sint, accusantium repellat. Corporis maxime placeat aspernatur veniam enim tempora ipsam sed temporibus repudiandae suscipit.
+    </p>
+    <p class="drop-cap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsam cupiditate, vero quae beatae corporis vel libero tenetur iure aperiam ipsa, harum autem, atque quo perferendis saepe delectus recusandae ratione dolores. Quaerat exercitationem quam corporis, velit nesciunt soluta delectus impedit.</p>
+</body>
+</html>

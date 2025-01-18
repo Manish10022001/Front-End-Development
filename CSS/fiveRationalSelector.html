@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rational Selectors</title>
+    <style>
+        /* Child Selector */
+        div p{
+            color :red;
+        }
+
+        /* Descendent Selector */
+        dl > dd{
+            color: blue;
+        }
+
+        /* Adjacent Sibling */
+        h1+p{
+            color:yellow;
+        }
+
+        /* General Sibling */
+        h2~p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Child Selector -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <span>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </span>
+    </div>
+
+    <!-- Decendent Selector -->
+    <dl>
+        <dd>html</dd>
+        <dd>CSS</dd>
+        <span>
+            <dt>Web</dt>
+        </span>
+    </dl>
+    
+    <!-- Adjacent Sibling-->
+    <h1>HTML</h1>
+    <p>dfjkdfjkdfj</p>
+    <p>dkfjdkfjdkfj</p>
+    <p>dkfjdkfjdkfj</p>
+
+    <!-- General Sibling -->
+    <h2>CSS</h2>
+    <p>dfjkdfjkdfj</p>
+    <p>dkfjdkfjdkfj</p>
+    <p>dkfjdkfjdkfj</p>
+</body>
+</html>

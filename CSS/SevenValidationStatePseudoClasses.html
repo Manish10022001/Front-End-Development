@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Validation Pseudo State classes</title>
+    <style>
+        #UserName:valid+div{
+            display: none;
+        }
+        #UserName:invalid+div{
+            display:block
+        }
+        #Mobile:valid+div {
+            display: none;
+        }
+
+        #Mobile:invalid+div {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName" required>
+            <div style="color: red;">User Name Required</div>
+        </dd>
+
+        <dt>Mobile Number</dt>
+        <dd>
+            <input type="text" id="Mobile" required pattern="^\+91\d{10}$" required>
+            <div style="color: red;">Enter +91 and 10digit number</div>
+        </dd>
+
+    </dl>
+</body>
+</html>

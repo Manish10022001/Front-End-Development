@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>structural Selector</title>
+    <style>
+        li:first-child{
+            color : blueviolet;
+        }
+        li:last-child{
+            color:green;
+        }
+        li:nth-child(3){
+            color: indianred;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+        }
+        li:nth-child(odd){
+            background-color: blue;
+        }
+        li:nth-of-type(2){
+            text-align: center;
+        }
+        li:nth-of-type(2n){
+            text-align: center;
+        }
+        li:nth-last-of-type(3n){
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <ol>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+    </ol>
+</body>
+</html>

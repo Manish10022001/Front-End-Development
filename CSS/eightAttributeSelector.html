@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <!-- Attribute Selector -->
+    <style>
+        input[type="button"]{
+            background-color: yellow;
+        }
+        p[id]{
+            color: red;
+        }
+        /* p[class="Effects"]{
+            color: red;
+        } */
+        /* ^= means starts with 
+        p[class^="Effects"]{
+            color:blue;
+        }*/
+d
+        /* &= means ends with 
+        p[class$="Effects"]{
+            color:yellow;
+        }*/
+
+        /* ~= means any location with space 
+        any where it occurs individually it works 
+        p[class~="Effects"]{
+            color: aqua;
+        }*/
+
+        /* |= stars with and have a hyphen or 
+        - separator
+         */
+         p[class|="Effects"]{
+            color: rebeccapurple;
+        }
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Name</dt>
+        <dd><input type="text"></dd>
+        <dt>Mobile</dt>
+        <dd><input type="text"></dd>
+    </dl>
+    <input type="button" value="Register">
+    <input type="button" value="Cancel">
+
+<hr><hr>
+    <div>
+        <p>Para - 1</p>
+        <p id="p2"> Para-2</p>
+        <p>Para-3</p>
+        <p id="p4">Para-4</p>
+    </div>
+<hr><hr>
+    <div>
+        <p class="Effects">Para -1 </p>
+        <p class="EffectsText">Para -1 </p>
+        <p class="Text-Effects">Para -1 </p>
+        <p class="AnimationEffectsText">Para -1 </p>
+        <p class="Effects-Text">Para -1</p> 
+        <p class="Effects Text">Para -1 </p>
+    </div>
+</body>
+</html>
